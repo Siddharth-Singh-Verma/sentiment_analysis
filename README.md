@@ -66,17 +66,17 @@ To run this project locally, follow these steps:
 4. The application will display the sentiment of the input text.
 
 ## Directory Structure
-sentiment_analysis/
-├── app.py # Flask application
-├── model/
-│ ├── sentiment_model.py # Model training and prediction code
-│ └── init.py # Model initialization
-├── templates/
-│ └── index.html # HTML template for the web interface
-├── static/
-│ └── style.css # CSS styling for the web interface
-├── requirements.txt # List of required packages
-├── README.md # Project readme file
+# sentiment_analysis/
+#├── app.py # Flask application
+#├── model/
+#│ ├── sentiment_model.py # Model training and prediction code
+#│ └── init.py # Model initialization
+#├── templates/
+#│ └── index.html # HTML template for the web interface
+#├── static/
+#│ └── style.css # CSS styling for the web interface
+#├── requirements.txt # List of required packages
+#├── README.md # Project readme file
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, please submit a pull request or open an issue.
