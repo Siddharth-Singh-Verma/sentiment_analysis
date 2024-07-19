@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Project by Siddharth Singh Verma</h1>
+        <h1>Sentiment Analysis</h1>
+        <h5>This site is for you to find tone/sentiment about any text mostly comments/reviews of any media</h5>
+        <form action="/predict" method="post">
+            <textarea name="text" placeholder="Enter your text here..." required></textarea>
+            <button type="submit">Analyze</button>
+        </form>
+        {% if prediction %}
+            <div class="result">
+                <h2>Prediction:</h2>
+                <p>The sentiment of the text is: <strong>{{ prediction }}</strong></p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
